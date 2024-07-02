@@ -34,3 +34,4 @@ docker-compose.yml
 **/yarn-debug.log*
 **/yarn-error.log*
 
+password

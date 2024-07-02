@@ -1,0 +1,18 @@
+{
+	"team_ip": "10.60.31.1",
+	"interface": "game",
+	"challenges": {
+		"01-ctfe": {
+			"port": 80
+		},
+		"02-notabook": {
+			"port": 1234
+		},
+		"03-saas": {
+			"port": 5555
+		},
+		"04-weird-cpu": {
+			"port": 5000
+		}
+	}
+}
