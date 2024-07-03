@@ -25,7 +25,7 @@ def get_password():
 
 
 def start_firegex(with_pw=False):
-    cmd = 'python start.py start --build'
+    cmd = '/usr/bin/env python3 start.py start --build'
     if with_pw:
         cmd += f' --psw-no-interactive {get_password()}'
     subprocess.check_call(shlex.split(cmd),
@@ -34,7 +34,7 @@ def start_firegex(with_pw=False):
 
 
 def stop_firegex():
-    subprocess.check_call(shlex.split(f'python start.py stop'),
+    subprocess.check_call(shlex.split(f'/usr/bin/env python3 start.py stop'),
                           stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     # subprocess.check_call(shlex.split(f'docker volume rm firegex_firegex_data'),
     #                       stdin=subprocess.PIPE, stdout=subprocess.PIPE)
